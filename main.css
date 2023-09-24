@@ -1,0 +1,2155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Container{
+    margin-left: auto;
+    margin-right: auto;
+    height: 2000px;
+}
+.Cart{
+  position: relative;
+  margin-left: -5px;
+}
+.Search{
+  margin-right: 10px;
+}
+.Header{
+    height: 100vh;
+   background-repeat: no-repeat;
+   z-index: 999;
+   position: relative;
+
+}
+.HeaderLogo{
+   position: absolute;
+   left: 9%;
+   top: 30%;
+}
+.offcanvas-top{
+  height: fit-content !important;
+  z-index: 99999 !important;
+  transition: 1.5s !important;
+ }
+ .ProductCart{
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  user-select: none;
+}
+ .CartImg{
+   position: absolute;
+   right: 10%;
+ }
+ .CartHeader{
+   margin-top: 30px;
+ }
+
+.CartHeader{
+  margin-left:8%;
+}
+.ProductName p{
+  font-size: 0.9rem;
+ color: #C1C1C1;
+}
+.ProductsContent{
+  margin-right: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 750px;
+  height: fit-content;
+}
+.ProductsContent p{
+  font-size: 0.9rem;
+ color: #C1C1C1;
+}
+
+button.prev, button.next {
+    display: flex;
+    font-size: 32px;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    background-color: #333;
+    border-radius: 50%;
+    width: 44px; height: 44px;
+  }
+  button.prev {
+    position: absolute; left: 0; top: 80px;
+  }
+  button.next {
+    position: absolute; right: 0; top: 80px;
+  }
+
+
+.Links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px ;
+    padding-right: 150px ;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background-color: rgb(254, 251, 251);
+    border: solid white 1px;
+}
+.CartNumber{
+  color: white;
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  right: 0;
+  width: 17px;
+  height: 21px;
+  border-radius: 50%;
+  font-size: 0.8rem;
+}
+.Men{
+  cursor: pointer;
+   margin-left: 10px;
+}
+.Women{
+    margin-left: 80px;
+ }
+ .Kids{
+    margin-left: 80px;
+    
+ }
+ .Hidden{
+  transform: translateY(-135%);
+ }
+ .menu{
+  transition: 1s;
+  position: absolute;
+ top: 92px;
+ left: 0;
+  width: 100%;
+  z-index: 99999;
+ }
+ .IconsLinks{
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 999;
+ }
+ .GenderLinks{
+    z-index: 999;
+    width: 400px;
+    display: flex;
+ }
+ .LogoMark{
+    z-index: 999;
+ }
+.Links a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+transition: 1.5s;
+}
+.Links a:hover:not(.logoContent){
+ transform: scale(1.2);
+}
+.Men:hover{
+    transform: scale(1.2);
+ }
+ .Women:hover{
+    transform: scale(1.2);
+ }
+ .Kids:hover{
+    transform: scale(1.2);
+ }
+
+.HeaderContent{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    top: 10%;
+    left: 22%;
+}
+.HeaderTitle{
+    font-size: 2rem;
+    position: absolute;
+    left: 20%;
+    top: 0%;
+color: white;
+}
+
+.login-list {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    transform: translate(-100%);
+    transition: 0.7s linear;
+    display: grid;
+    place-items: center;
+  }
+  .login-list.show {
+    transform: translate(0%);
+  
+  }
+  .login-list .content{
+    background-color: #fff;
+    border: solid black 1px;
+    width: 437px;
+    height: 628px;
+    min-height: 100px;
+    padding: 1rem;
+    border-radius: 25px;
+  }
+  .User{
+    cursor: pointer;
+  }
+  
+  .login-list .content_head {
+text-align: right;
+  }
+  .Login-Title{
+    text-align: center;
+    margin-top: -20px;
+  }
+  .content_LowHead{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .content_body{
+    margin-top: 30px;
+  }
+  .Inputs{
+    margin-top: 30px;
+  }
+  .EmailInput{
+    width: 345px;
+    height: 56px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 25px;
+    border: solid #D0D0D0 1px;
+ }
+ .PassInput{
+    width: 345px;
+    height: 56px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 25px;
+    border: solid #D0D0D0 1px;
+    
+ }
+ .HidePassSection{
+  width: 50px;
+  height: 50px;
+  margin-left: 320px;
+  position: absolute;
+  top: 360px;
+ }
+ .HidePass{
+cursor: pointer;
+ }
+  .SignIn{
+    width: 345px;
+    height: 56px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 25px;
+    background-color: orange;
+    border: solid white 1px;
+    cursor: pointer;
+    transition: 0.8s;
+  }
+  .SignIn:hover{
+background-color: white !important;
+color: orange;
+border: solid orange 1px;
+  }
+  ::placeholder{
+    position: absolute;
+    left: 40px;
+  }
+  input{
+    text-align: start;
+    padding-left: 40px;
+  }
+  .CheckBox{
+    display: flex;
+    margin-left: 30px;
+    width: 141px;
+    height: 20px;
+  }
+  .ForgotPassword a{
+    text-decoration: none;
+    color: #808080;
+font-size: 0.8rem;
+margin-left: 62%;
+position: relative;
+top: 30px;
+  }
+  .KeepMe{
+    font-size: 0.9rem;
+    width: 150px;
+    margin-left: 10px;
+    margin-top: -2px;
+  }
+  .SocialMediaNav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .SocialMediaNav a{
+    text-decoration: none;
+  }
+  .GmailLink{
+    margin-right: 60px;
+  }
+  .GmailLinkContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: -18px;
+  }
+  .GmailLinkContent p {
+    font-size: 0.9rem;
+    color: black;
+    margin-top: 13px;
+  }
+  .FBlinkContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: -18px ;
+  }
+  .FBlink{
+    height: 56px;
+    background-color: #3B5998;
+    border: solid #cecece 1px;
+    margin-left: 30px;
+    border-radius: 25px;
+    padding: 20px 40px 20px 40px;
+  }
+  .GmailLink{
+    height: 56px;
+    background-color: white;
+    border: solid #F1584D 1px;
+    border-radius: 25px;
+    margin-left: 20px;
+    padding: 20px 40px 20px 40px;
+  }
+  .FBlinkContent p {
+    font-size: 0.9rem;
+    color: white;
+    margin-top: 13px;
+  }
+
+  .FooterNav{
+    display: flex;
+    gap: 40px;
+    margin-left: 90px;
+    margin-top: 20px;
+  }
+  .FooterNav a{
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: black;
+  }
+
+
+  .login-list .btn-close {
+    padding: 0.3rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .login-list .btn-close:hover {
+    box-shadow: 0 1px 5px 2px #e3dcdc59;
+  }
+
+
+
+  .login-list1 {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    transform: translate(-100%);
+    transition: 0.4s linear;
+    display: grid;
+    place-items: center;
+  }
+  .login-list1.show1 {
+    transform: translate(0%);
+  
+  }
+  .login-list1 .content{
+    background-color: #fff;
+    border: solid black 1px;
+    width: 437px;
+    height: 720px;
+    min-height: 100px;
+    padding: 1rem;
+    border-radius: 25px;
+  }
+  
+  .login-list1 .content_head {
+  text-align: right;
+  }
+  .Login-Title1{
+    text-align: center;
+  }
+  .content_LowHead1{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .content_body1{
+    margin-top: 30px;
+  }
+  .Inputs{
+    margin-top: 20px;
+  }
+  .EmailInput{
+    width: 345px;
+    height: 56px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 25px;
+    border: solid #D0D0D0 1px;
+  }
+  .PassInput{
+    width: 345px;
+    height: 56px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 25px;
+    border: solid #D0D0D0 1px;
+    
+  }
+  .FirstNameInput{
+    width: 345px;
+    height: 56px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 25px;
+    border: solid #D0D0D0 1px;
+  }
+  .LastNameInput{
+    width: 345px;
+    height: 56px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 25px;
+    border: solid #D0D0D0 1px;
+  }
+  .active1 , .BackForward , .active2{
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: white;
+    margin-top: -10px;
+  }
+
+
+  .SignUp{
+    width: 345px;
+    height: 56px;
+    margin-top: 20px;
+    margin-left: 30px;
+    border-radius: 25px;
+    background-color: orange;
+    border: solid white 1px;
+    cursor: pointer;
+  }
+  ::placeholder{
+    position: absolute;
+    left: 40px;
+  }
+  input{
+    text-align: start;
+    padding-left: 40px;
+  }
+  .CheckBox{
+    display: flex;
+    margin-left: 30px;
+    width: 141px;
+    height: 20px;
+    margin-top: 10px;
+  }
+  .Agree{
+    width: 300px;
+    margin-left: 10px;
+    margin-top: 2px;
+    font-size: 0.8rem;
+  }
+  
+  .FooterNav1{
+    display: flex;
+    gap: 40px;
+    margin-left: 110px;
+    margin-top: 20px;
+  }
+  .FooterNav1 a{
+    text-decoration: none;
+    color: black;
+  }
+  .login-list1 .btn-close {
+    padding: 0.3rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .login-list1 .btn-close:hover {
+    box-shadow: 0 1px 5px 2px #e3dcdc59;
+  }
+  
+
+.ResetPass{
+    position: relative;
+}
+.active2{
+    font-size: 0.8rem;
+    background-color: white !important;
+    position: absolute;
+    left: 250px;
+ top: -172px;
+ 
+}
+  .login-list2 {
+    position: fixed;
+    inset: 0;
+    z-index: 999;
+    transform: translate(-100%);
+    transition: 0.4s linear;
+    display: grid;
+    place-items: center;
+  }
+  .login-list2.show2 {
+    transform: translate(0%);
+  
+  }
+  .login-list2 .content{
+    background-color: #fff;
+    border: solid black 1px;
+    width: 437px;
+    height: 628px;
+    min-height: 100px;
+    padding: 1rem;
+    border-radius: 25px;
+  }
+  
+  .login-list2 .content_head {
+  text-align: right;
+  }
+  .Login-Title2{
+    text-align: center;
+  }
+  .content_LowHead2{
+    text-align: center;
+    margin-top: 30px;
+  }
+  .content_body2{
+    margin-top: 30px;
+  }
+  .Inputs{
+    margin-top: 20px;
+  }
+  .EmailInput{
+    width: 345px;
+    height: 56px;
+    margin-top: 10px;
+    margin-left: 30px;
+    border-radius: 25px;
+    border: solid #D0D0D0 1px;
+  }
+  .PhoneInput{
+    width: 345px;
+    height: 56px;
+ position: absolute;
+ left: 8%;
+    margin-top: 30px;
+    border-radius: 25px;
+    border: solid #D0D0D0 1px;
+  }
+  .iti__flag-container{
+    margin-left: 65px;
+  }
+  .OrLine{
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+  }
+ .FirstLine{
+    width: 150px;
+    height: 1px;
+    background-color: #D8D8D8;
+ }
+ .LastLine{
+    width: 150px;
+    height: 1px;
+    background-color: #D8D8D8;
+    margin-left: 10px;
+ }
+ .OrWord{
+    margin-top: -10px;
+    margin-left: 10px;
+    color: #D8D8D8;
+ }
+
+  .RestBtn{
+    width: 345px;
+    height: 56px;
+    margin-top: 30px;
+    margin-left: 30px;
+    border-radius: 25px;
+    background-color: orange;
+    border: solid white 1px;
+    cursor: pointer;
+  }
+  ::placeholder{
+    position: absolute;
+    left: 40px;
+  }
+  .PhoneInput::placeholder{
+margin-left: 80px;
+  }
+.SelectCodes{
+    width: 83px;
+    height: 30px;
+    background-color: #F5F5F5;
+    border: solid #707070 1px;
+    border-radius: 25px;
+}
+.SelectCodes option {
+    text-align: center;
+}
+.SelectSection{
+ position: absolute;
+ top: 458px;
+margin-left: 50px;
+}
+  input{
+    text-align: start;
+    padding-left: 40px;
+  }
+  .PhoneNumberSection input{
+   padding-left: 120px;
+      }
+  
+  .login-list2 .btn-close2 {
+    margin-left: 90%;
+    padding: 0.3rem 0.5rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  
+  .login-list2 .btn-close2:hover {
+    box-shadow: 0 1px 5px 2px #e3dcdc59;
+  }
+  
+
+
+
+
+.ArrowShop{
+    width: 40px;
+    height: 40px;
+    font-size: 1.3rem;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 1.5s;
+}
+.ArrowShop:hover{
+    background-color: white;
+}
+.ArrowRight{
+    color: white;
+    transition: 1.5s;
+}
+.ArrowRight:hover{
+    color: orange;
+}
+.HeaderContent h3{
+    color: white;
+    font-size: 0.8rem;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}
+.ArrowArea{
+    width: 215px;
+    height: 50px;
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+}
+.MenuBar{
+    font-size: 1.5rem;
+    display: none;
+    color: white;
+}
+.HeaderLogoSM{
+    display: none;
+}
+.HeaderImges{
+    width: 100%;
+    position: absolute;
+    top: -53px;
+}
+.ArrowsCarousel{
+    width: 120px;
+    height: 60px;
+position: absolute;
+right: 7%;
+bottom: 6%;
+    z-index: 99999;
+    display: flex;
+   gap: 10px;
+
+}
+#LeftArrow{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    transition: 1s;
+}
+#RightArrow{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    transition: 1s;
+}
+#LeftArrow:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+#RightArrow:hover{
+    background-color: white;
+    transform: scale(1.1);
+}
+
+
+.RecInfo{
+    width: 1221px;
+    height: 131px;
+    background-image: url(./RecInfo.png);
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    z-index: 999;
+}
+.RecContent{
+    position: relative;
+    top: 30%;
+}
+.Info1{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    position: absolute;
+    left: 10%;
+}
+.Info2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 40%;
+}
+.Info3{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    position: absolute;
+    top: 0;
+    left: 67%;
+}
+.Info1 h6{
+    width: 100px;
+    position: absolute;
+    top: -15%;
+    left: 170%
+}
+.Info1 p{
+ width: 200px;
+ position: absolute;
+ top: 60%;
+ left: 170%;
+ opacity: 50%;
+}
+.Info2 h6{
+    width: 190px;
+    position: absolute;
+    top: -10%;
+    left: 170%
+}
+.Info2 p{
+    width: 200px;
+    position: absolute;
+    top: 60%;
+    left: 170%;
+    opacity: 50%;
+   }
+   .Info3 h6{
+    width: 190px;
+    position: absolute;
+    top: -10%;
+    left: 170%
+}
+.Info3 p{
+    width: 200px;
+    position: absolute;
+    top: 60%;
+    left: 170%;
+    opacity: 50%;
+   }
+.OpactiyReigon{
+    width: 100%;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 20%;
+    position: absolute;
+    top: 0;
+    overflow: hidden;
+
+}
+.Mid{
+    position: relative;
+    height: 550px;
+    margin-left: 120px;
+    margin-right: 120px;
+ }
+ .bigImg{
+    flex-grow: 4;
+    transition:2s;
+}
+.Cards .card{
+    width: 250px;
+}
+
+.Cards .card button.card-title{
+    border-radius: 40px;
+}
+.Cards .card img{
+    height: 373px;
+    width: 100%;
+    object-fit: cover;
+
+}
+.Cards .card p{
+    font-size: 25px !important;
+}
+.Cards .card button{
+    font-size: 13px !important;
+}
+
+@media (max-width:520px) { 
+    .Cards .container {
+        margin-top: 80px !important;
+    }
+}
+@media (min-width:521px) and (max-width: 570px) { 
+    .Cards .container {
+        margin-top: 150px !important;
+    }
+}
+@media (max-width: 992px) { 
+    .Cards .container{
+        flex-wrap: wrap;
+    }
+    .Cards .card{
+        flex-grow: 1;
+    }
+
+}
+.card{
+    transition: 1.5s;
+}
+.card a{
+    background-color: white;
+    border-radius: 25px;
+    transition: 1.5s;
+}
+.card a:hover{
+    background-color: black;
+    color: white;
+    transform: perspective(800px) rotateY(30deg);
+}
+.MidLastContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10%;
+}
+
+ .MidLastContent p {
+    font-size: 1.5rem;
+    margin-left: 8.5%;
+ }
+ .MidLastLink{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 25px;
+    border: solid black 1px;
+    padding: 10px 20px 10px 20px;
+    margin-right: 10.6%;
+    transition: 1s;
+ }
+ .MidLastLink:hover{
+    color: white;
+    background-color: black;
+    transform:scale(1.1)
+ }
+ .SecondMidSection{
+    height: 650px;
+    margin-top: -160px;
+ }
+
+.Discount{
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    color: white;
+    background-color: red;
+    border-radius: 25px;
+    padding: 10px 10px 10px 10px;
+}
+
+.Carousel1Price{
+    margin-top: 5px;
+}
+.Carousel1Price h5{
+    color: #FF0000;
+}
+.Carousel1Price span{
+    margin-left: 10px;
+    color: #CECECE;
+}
+
+.Carousel2Price{
+    margin-top: 5px;
+}
+
+.Carousel3Price{
+    margin-top: 5px;
+}
+
+.Carousel4Price{
+    margin-top: 5px;
+}
+.PagePerformance{
+    height: 600px;
+    margin-top: 80px;
+    margin-left: 120px;
+    margin-right: 120px;
+}
+.PagePerformanceIntro{
+    font-size: 1.8rem;
+    text-align: center;
+    color: hwb(0 29% 70%);
+}
+.PagePerformanceDetails{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 150px;
+    gap: 50px;
+}
+.PerformancePhoto{
+    margin-bottom: 40px;
+}
+.PagePerformanceDetails h6{
+    margin-bottom: 30px;
+}
+.PagePerformanceDetails p{
+   color: #808080;
+}
+.CarouselSecondSection{
+    height: 600px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+footer .icons i {
+  width: 40px;
+  height: 30px;
+    color: black;
+    transition: 1.5s;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 2px;
+}
+ footer .icons i:hover {
+  background-color: black;
+  color: white;
+transform: rotate(360deg);
+}
+
+.Subscribe .container {
+    position: relative;
+    margin-bottom: 80px;
+}
+.Subscribe .d-flex {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.Subscribe img {
+    width: 100%;
+    height: 200px;
+}
+.Subscribe .d-flex p {
+    width: 300px;
+}
+.Subscribe input {
+    padding: 10px 40px;
+    border-radius: 40px;
+  
+}
+.email {
+    outline: none;
+}
+form button {
+    padding: 10px 30px !important;
+    background-color: #FBB03B !important;
+    border-radius: 40px !important;
+    margin-left: 20px;
+    transition: 1s !important;
+}
+form button:hover {
+  color: #FBB03B !important;
+  background-color: white !important;
+  border: solid #FBB03B 1px !important ;
+}
+footer .img_logo {
+    width: 100%;
+    margin-bottom: 20px;
+}
+footer .img_logo img {
+    width: 50px;
+    height: 30px;
+    margin-top: -20px;
+}
+footer .img_logo a {
+    text-decoration: none;
+    color: var(--main_color);
+    margin-left: 30px;
+    font-size: 20px;
+}
+footer .img_logo a span {
+    color: #FBB03B;
+}
+footer .icons {
+  font-size: 1.5rem;
+    margin-top: 100px;
+    display: flex;
+    gap: 30px;
+}
+.SitePrivacy{
+    height: 50px;
+    margin-top: 30px;
+}
+.email{
+    margin-bottom: 20px;
+
+}
+
+
+@media(max-width:570px){
+    form button {
+        margin-left: 0;
+    }
+
+    .Subscribe input {
+        padding: 10px 40px;
+        border-radius: 40px;
+        margin-bottom: 20px;
+    }
+    .Subscribe .d-flex p {
+        width: 250px;
+    }
+}
+@media (min-width:360px) and (max-width:380px) {
+  .FooterImgContent{
+    display: none;
+  }
+  form input {
+    margin-top: 20px;
+  }
+  .PagePerformanceIntro{
+    font-size: 1.3rem;
+  }
+  .MidLastLink{
+    font-size: 0.9rem;
+    width: 120px;
+    text-align: center;
+    margin-right: 5px;
+  }
+  .MenuBar{
+    display: block;
+    position: absolute;
+    top: 10%;
+   left: 78%;
+  }
+  .Footer{
+    margin-top: 350px;
+}
+
+.swiper-slide p {
+    font-size: 1.3rem;
+}
+.SecondMidSection{
+    position: relative;
+    height: 800px;
+    top: 8%;
+}
+.PagePerformance{
+    margin-top: 350px;
+    width: 100%;
+    height: 950px;
+    position: relative;
+   left: -33%;
+}
+.PagePerformanceDetails{
+    width: 100%;
+    height: 200px;
+}
+.PerformanceDetails1 p{
+  width: 150px;
+}
+.PerformanceDetails2 p{
+    width: 150px;
+  }
+  .PerformanceDetails3 p{
+    width: 150px;
+  }
+  .PerformanceDetails4 p{
+    width: 150px;
+  }
+  .PerformanceDetails1{
+    position: absolute;
+    left: 13.5%;
+  }
+  .PerformanceDetails2{
+    position: absolute;
+    left: 60.5%;
+  }
+.PerformanceDetails3{
+position: absolute;
+left: 13.5%;
+top: 55%;
+}
+.PerformanceDetails4{
+position: absolute;
+left: 60.5%;
+top: 55%;
+}
+.Mid{
+    display: none;
+}
+.HeaderImges{
+    display: none;
+}
+.ArrowsCarousel{
+    display: none;
+}
+.OpactiyReigon{
+    height: 603px;
+position: absolute;
+top: 81px;
+}
+.HeaderContent{
+left: 10%;
+top: 40%
+}
+.Header{
+background-image: url(./HeaderSM.png);
+height: 684px;
+background-size: cover;
+}
+.RecInfo{
+    display: none;
+}
+.Links{
+padding-top: 20px;
+height: 81px;
+background-color: #ffffff;
+z-index: 0;
+top: 0;
+}
+.Links a {
+    color: black;
+}
+.GenderLinks{
+    display: none;
+}
+.User{
+    display: none;
+}
+.IconsLinks{
+position: absolute;
+width: 170px;
+}
+.Cart{
+position: absolute;
+margin-top: -2px;
+right: 33%;
+}
+.CartNumber{
+width: 15px;
+height: 18px;
+font-size: 0.7rem;
+top: 30%;
+right: 27%;
+}
+.Search{
+position: absolute;
+margin-top: 25px;
+right: 50%;
+
+}
+.LogoMark{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    left: 10%;
+    top: 20px;
+}
+.logoContent{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+
+}
+.HeaderLogo{
+    display: none;
+}
+.HeaderLogoSM{
+    display: block;
+    position: absolute;
+    left: -5%;
+    top: 8px;
+ }
+ .HeaderContent{
+  width: 200px;
+  top: 40%;
+ }
+ .login-list{
+  display: none;
+ }
+}
+
+@media (min-width:360px) and (max-width:380px) {
+  .FooterImgContent{
+    display: none;
+  }
+  .offcanvas-body{
+    display: grid;
+    margin-left: -20px;
+  }
+ .Men{
+  margin-left: 80px;
+ }
+  form input {
+    margin-top: 20px;
+  }
+  .PagePerformanceIntro{
+    font-size: 1.3rem;
+  }
+  .MidLastLink{
+    font-size: 0.9rem;
+    width: 120px;
+    text-align: center;
+    margin-right: 5px;
+  }
+  .Footer{
+    margin-top: 350px;
+}
+
+.swiper-slide p {
+    font-size: 1.3rem;
+}
+.SecondMidSection{
+    position: relative;
+    height: 800px;
+    top: 8%;
+}
+.PagePerformance{
+    margin-top: 350px;
+    width: 100%;
+    height: 950px;
+    position: relative;
+   left: -34%;
+}
+.PagePerformanceDetails{
+    width: 100%;
+    height: 200px;
+}
+.PerformanceDetails1 p{
+  width: 150px;
+}
+.PerformanceDetails2 p{
+    width: 150px;
+  }
+  .PerformanceDetails3 p{
+    width: 120px;
+  }
+  .PagePerformanceDetails h6 {
+    font-size: 0.9rem;
+  }
+  .PerformanceDetails4 p{
+    width: 120px;
+  }
+  .PerformanceDetails1{
+    position: absolute;
+    left: 13.5%;
+  }
+  .PerformanceDetails2{
+    position: absolute;
+    left: 60.5%;
+  }
+.PerformanceDetails3{
+position: absolute;
+left: 13.5%;
+top: 55%;
+}
+.PerformanceDetails4{
+position: absolute;
+left: 60.5%;
+top: 55%;
+}
+.Mid{
+    display: none;
+}
+.HeaderImges{
+    display: none;
+}
+.ArrowsCarousel{
+    display: none;
+}
+.OpactiyReigon{
+    height: 603px;
+position: absolute;
+top: 81px;
+}
+.HeaderContent{
+left: 10%;
+top: 40%
+}
+.Header{
+background-image: url(./HeaderSM.png);
+height: 684px;
+background-size: cover;
+}
+.RecInfo{
+    display: none;
+}
+.Links{
+padding-top: 20px;
+height: 81px;
+background-color: #ffffff;
+z-index: 0;
+top: 0;
+}
+.Links a {
+    color: black;
+}
+.GenderLinks{
+    display: none;
+}
+.User{
+    display: none;
+}
+.MenuBar{
+    display: block;
+    margin-top: -2px;
+    color: black;
+    position: absolute;
+   left: 73%;
+}
+.IconsLinks{
+position: absolute;
+width: 170px;
+}
+.Cart{
+position: absolute;
+margin-top: -2px;
+right: 30%;
+}
+.CartNumber{
+width: 15px;
+height: 18px;
+font-size: 0.7rem;
+top: 30%;
+right: 24%;
+}
+.Search{
+position: absolute;
+margin-top: 25px;
+right: 50%;
+}
+.LogoMark{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    left: 10%;
+    top: 20px;
+}
+.logoContent{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+
+}
+.HeaderLogo{
+    display: none;
+}
+.HeaderLogoSM{
+    display: block;
+    position: absolute;
+    left: -5%;
+    top: 8px;
+ }
+ .HeaderContent{
+  width: 200px;
+  top: 40%;
+ }
+ .login-list{
+  display: none;
+ }
+
+}
+@media (min-width:380px) and (max-width:450px) {
+  .FooterImgContent{
+    display: none;
+  }
+  .offcanvas-body{
+    display: grid;
+    margin-left: -20px;
+  }
+ .Men{
+  margin-left: 80px;
+ }
+  form input {
+    margin-top: 20px;
+  }
+  .PagePerformanceIntro{
+    font-size: 1.3rem;
+  }
+  .MidLastLink{
+    font-size: 0.9rem;
+    width: 120px;
+    text-align: center;
+    margin-right: 5px;
+  }
+  .Footer{
+    margin-top: 350px;
+}
+
+.swiper-slide p {
+    font-size: 1.3rem;
+}
+.SecondMidSection{
+    position: relative;
+    height: 800px;
+    top: 8%;
+}
+.PagePerformance{
+    margin-top: 350px;
+    width: 100%;
+    height: 950px;
+    position: relative;
+   left: -32%;
+ 
+}
+.PagePerformanceDetails{
+    width: 100%;
+    height: 200px;
+}
+.PerformanceDetails1 p{
+  width: 150px;
+}
+.PerformanceDetails2 p{
+    width: 150px;
+  }
+  .PerformanceDetails3 p{
+    width: 150px;
+  }
+  .PerformanceDetails4 p{
+    width: 150px;
+  }
+  .PerformanceDetails1{
+    position: absolute;
+    left: 13.5%;
+  }
+  .PerformanceDetails2{
+    position: absolute;
+    left: 60.5%;
+  }
+.PerformanceDetails3{
+position: absolute;
+left: 13.5%;
+top: 55%;
+}
+.PerformanceDetails4{
+position: absolute;
+left: 60.5%;
+top: 55%;
+}
+.Mid{
+    display: none;
+}
+.HeaderImges{
+    display: none;
+}
+.ArrowsCarousel{
+    display: none;
+}
+.OpactiyReigon{
+    height: 603px;
+position: absolute;
+top: 81px;
+}
+.HeaderContent{
+left: 10%;
+top: 40%
+}
+.Header{
+background-image: url(./HeaderSM.png);
+height: 684px;
+background-size: cover;
+}
+.RecInfo{
+    display: none;
+}
+.Links{
+padding-top: 20px;
+height: 81px;
+background-color: #ffffff;
+z-index: 0;
+top: 0;
+}
+.Links a {
+    color: black;
+}
+.GenderLinks{
+    display: none;
+}
+.User{
+    display: none;
+}
+.MenuBar{
+    display: block;
+    margin-top: 25px;
+    color: black;
+    position: absolute;
+   left: 80%;
+}
+.IconsLinks{
+position: absolute;
+width: 170px;
+}
+.Cart{
+position: absolute;
+margin-top: -2px;
+right: 30%;
+}
+.CartNumber{
+width: 15px;
+height: 18px;
+font-size: 0.7rem;
+top: 30%;
+right: 24%;
+}
+.Search{
+position: absolute;
+margin-top: 25px;
+right: 50%;
+}
+.LogoMark{
+    width: 150px;
+    height: 100px;
+    position: absolute;
+    left: 10%;
+    top: 20px;
+}
+.logoContent{
+    position: absolute;
+    left: 40%;
+    top: 10%;
+
+}
+.HeaderLogo{
+    display: none;
+}
+.HeaderLogoSM{
+    display: block;
+    position: absolute;
+    left: -5%;
+    top: 8px;
+ }
+ .HeaderContent{
+  width: 200px;
+  top: 40%;
+ }
+ .login-list{
+  display: none;
+ }
+ 
+}
+
+
+@media (min-width:450px) and (max-width:767px) {
+    .Footer{
+        margin-top: 350px;
+    }
+    .offcanvas-body{
+      display: grid;
+      margin-left: -20px;
+    }
+   .Men{
+    margin-left: 80px;
+   }
+    .swiper-slide p {
+        font-size: 1.3rem;
+    }
+    .SecondMidSection{
+        position: relative;
+        height: 800px;
+        top: 8%;
+    }
+    .PagePerformance{
+        margin-top: 350px;
+        width: 100%;
+        height: 950px;
+        position: relative;
+       left: -25%;
+    }
+    .PagePerformanceDetails{
+        width: 100%;
+        height: 200px;
+    }
+    .PerformanceDetails1 p{
+      width: 150px;
+    }
+    .PerformanceDetails2 p{
+        width: 150px;
+      }
+      .PerformanceDetails3 p{
+        width: 150px;
+      }
+      .PerformanceDetails4 p{
+        width: 150px;
+      }
+      .PerformanceDetails1{
+        position: absolute;
+        left: 13.5%;
+      }
+      .PerformanceDetails2{
+        position: absolute;
+        left: 60.5%;
+      }
+.PerformanceDetails3{
+position: absolute;
+left: 13.5%;
+top: 55%;
+}
+.PerformanceDetails4{
+  position: absolute;
+left: 60.5%;
+top: 55%;
+}
+    .Mid{
+        display: none;
+    }
+    .HeaderImges{
+        display: none;
+    }
+    .ArrowsCarousel{
+        display: none;
+    }
+    .OpactiyReigon{
+        height: 603px;
+    position: absolute;
+    top: 81px;
+    }
+   .HeaderContent{
+    left: 10%;
+    top: 40%
+   }
+   .Header{
+    background-image: url(./HeaderSM.png);
+    height: 684px;
+    background-size: cover;
+}
+    .RecInfo{
+        display: none;
+    }
+    .Links{
+padding-top: 20px;
+height: 81px;
+background-color: #ffffff;
+z-index: 0;
+top: 0;
+    }
+    .Links a {
+        color: black;
+    }
+    .GenderLinks{
+        display: none;
+    }
+    .User{
+        display: none;
+    }
+    .MenuBar{
+        display: block;
+        margin-top: 25px;
+        margin-right: -38px;
+        color: black;
+    }
+  .IconsLinks{
+    position: relative;
+    left: 80%;
+    top: -10%;
+  }
+  .Cart{
+    position: absolute;
+   margin-top: -2px;
+    right: 22%;
+  }
+  .CartNumber{
+width: 15px;
+height: 18px;
+font-size: 0.7rem;
+    top: 40%;
+    right: 14%;
+  }
+  .Search{
+    position: absolute;
+    margin-top: 25px;
+    right: 60%;
+  
+  }
+    .LogoMark{
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        left: 10%;
+        top: 20px;
+    }
+    .logoContent{
+        position: absolute;
+        left: 40%;
+        top: 10%;
+   
+    }
+    .HeaderLogo{
+        display: none;
+    }
+    .HeaderLogoSM{
+        display: block;
+        position: absolute;
+        left: -5%;
+        top: 8px;
+     }
+
+}
+
+@media (min-width:768px) and (max-width:992px) {
+  .menu{
+    top: 62px;
+    width: 100%;
+    left: 0;
+  }
+    .Mid{
+        display: none;
+    }
+    .ArrowsCarousel{
+        display: none;
+    }
+    .Header{
+        background-image: url(./HeaderSM.png);
+        background-size: cover;
+    }
+    .OpactiyReigon{
+        height: 104.5vh ;
+    }
+    .HeaderContent{
+        top: 30%;
+    }
+    .RecInfo{
+        display: none;
+    }
+    .links{
+        position: relative;
+    }
+    .LogoMark{
+        width: 150px;
+        height: 100px;
+        position: absolute;
+        left: 10%;
+        top: 30px;
+    }
+    .logoContent{
+        position: absolute;
+        left: 40%;
+
+   
+    }
+    .HeaderLogo{
+        position: absolute;
+        left: -5%;
+        top: 0;
+    }
+    .GenderLinks{
+        position: absolute;
+        left: 30%; 
+  
+     }
+    .IconsLinks{
+        position: relative;
+        right: -90%; 
+        gap: 20px;
+}
+ .Men{
+    margin-left: 80px;
+    
+ }
+ .Women{
+    margin-left: 20px;
+ }
+ .Kids{
+    margin-left: 20px;
+ }
+ .CartNumber{
+  width: 15px;
+  height: 19px;
+  font-size: 0.8rem;
+  margin-right: -10px;
+  margin-top: 3px;
+ }
+
+}
+@media (min-width:993px) and (max-width:1049px) {
+    .Mid{
+        display: none;
+    }
+    .RecInfo{
+        transform: translate(-35%);
+        bottom: -8.6%;
+right: -25%;
+    }
+    .HeaderContent{
+        top: 30%;
+    }
+    .Info1{
+        left: 36%;
+    }
+    .Info2{
+        left: 57%;
+    }
+    .Info3{
+        left: 79%;
+    }
+    .OpactiyReigon{
+        height: 102vh;
+    }
+
+
+}
+@media (min-width:1050px) and (max-width:1099px) {
+    .Mid{
+        display: none;
+    }
+    .RecInfo{
+        transform: translate(-35%);
+        bottom: -8.6%;
+right: -25%;
+    }
+    .HeaderContent{
+        top: 30%;
+    }
+    .Info1{
+        left: 30%;
+    }
+    .Info2{
+        left: 51%;
+    }
+    .Info3{
+        left: 73%;
+    }
+
+}
+@media (min-width:1100px) and (max-width:1149px) {
+    .Mid{
+        display: none;
+    }
+    .RecInfo{
+        transform: translate(-40%);
+        bottom: -8.6%;
+right: -25%;
+    }
+   
+    .Info1{
+        left: 30%;
+    }
+    .Info2{
+        left: 51%;
+    }
+    .Info3{
+        left: 74%;
+    }
+
+
+}
+@media (min-width:1150px) and (max-width:1199px) {
+    .Mid{
+        display: none;
+    }
+    .RecInfo{
+        transform: translate(-40%);
+        bottom: -8.6%;
+right: -25%;
+    }
+   
+    .Info1{
+        left: 25%;
+    }
+    .Info2{
+        left: 49%;
+    }
+    .Info3{
+        left: 74%;
+    }
+
+}
+@media (min-width:1200px) and (max-width:1249px) {
+    .Mid{
+        display: none;
+    }
+    .RecInfo{
+        transform: translate(-40%);
+        bottom: -8.6%;
+right: -25%;
+    }
+  
+    .Info1{
+        left: 19%;
+    }
+    .Info2{
+        left: 45%;
+    }
+    .Info3{
+        left: 74%;
+    }
+
+}
+@media (min-width:1250px) and (max-width:1350px) {
+    .Mid{
+        display: none;
+    }
+    .RecInfo{
+        transform: translate(-40%);
+        bottom: -8.6%;
+right: -25%;
+    }
+    .Info1{
+        left: 14%;
+    }
+    .Info2{
+        left: 43%;
+    }
+    .Info3{
+        left: 74%;
+    }
+
+}
+@media (min-width:1051px) and (max-width:1800px) {
+    .HeaderContent{
+        top: 30%;
+    }
+}
+@media (min-width:991px) and (max-width:1535px) {
+    .Mid{
+        display: none;
+    }
+ .Header{
+    background-image: url(Header.png);
+ }
+ .ArrowsCarousel{
+    display: none;
+ }
+ .RecInfo{
+    bottom: -9.2%;
+ }
+ .OpactiyReigon{
+    height: 104.5vh;
+ }
+ 
+}
+@media (min-width:1400px) and (max-width:1535px) {
+    .ArrowsCarousel{
+     display: flex;
+     right: 2%;
+     bottom: -2%;
+    }
+}
+@media (min-width:768px) and (max-width:1535px) {
+    .swiper-slide p , h5 , span{
+        font-size: 1.2rem;
+    }
+    .MidLastContent{
+        margin-top: 35%;
+    }
+   
+
+}
+@media (min-width:1500px) and (max-width:1800px) {
+  .Mid{
+    display: block;
+    margin-top: 150px;
+  }
+
+}
+
+/* .form {
+  width: 120px;
+  height: 45px;
+  border:1px solid #D8D8D8 ;
+  border-radius: 30px;
+  margin-left: 63.8%;
+  margin-top: 10px;
+  background-color: red;
+}
+.form p, span {
+  font-size: 20px;
+  margin-top: 5px;
+}
+.form p:hover {
+  cursor: pointer;
+} */
+.ProductName{
+  width: 450px;
+  height: fit-content;
+  margin-left:8%;
+}
+.ContinueBtn{
+  outline:none;
+  border: none;
+  background-color: white;
+  display: flex;
+  gap: 20px;
+  width: 200px;
+}
+.CheckOutLink{
+  padding: 10px 40px 10px 40px;
+   font-size: 1rem !important;
+  background-color: orange;
+  color: white !important;
+  border-radius: 25px;
+  transition: 1s;
+  }
+  .CheckOutLink:hover{
+    color: orange !important;
+    background-color: white;
+    border: solid orange 1px;
+  }
+.TotalCost{
+  margin-left: -80px;
+}
+.LeftArrowCart{
+  margin-top: 5px;
+}
+.LowCartContent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-top: 70px;
+  margin-left: 8%;
+  margin-right: 10%;
+}
+.TotalCost{
+  margin-top: 10px;
+}
+.PromoCode input{
+  width: 315px;
+  height: 50px;
+  border: solid #707070 1px;
+  border-radius: 25px;
+}
+.PromoBtn{
+ margin-left: -50px;
+ border: none;
+ outline: none;
+ background-color: white;
+}
+.MenuCanvas {
+  width: 200px !important;
+  height: 300px !important;
+  transition: 1.2s !important;
+  border-end-start-radius: 30px;
+}
+.MenuClose{
+  font-size: 0.9rem !important;
+}
+.OpactiyReigon{
+  display: none;
+}
+
+@keyframes Circle {
+  100% { 
+      transform: translateX(-150%);
+      opacity: 0;
+  }
+  
+}
+
+.Circle  {
+  position: fixed;
+  top: 100px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color:rgb(254, 251, 251);
+  animation-name: Circle;
+  animation-duration: 6s;
+  transform: translate(100% ,0);
+animation-fill-mode: both;
+ z-index: 999999;
+}
+.CircleWelcome{
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-align: center;
+position: absolute;
+top: 35%;
+}
+
+
